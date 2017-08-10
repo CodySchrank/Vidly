@@ -167,17 +167,17 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708100434419_InitialModel.cs" />
-    <Compile Include="Migrations\201708100434419_InitialModel.Designer.cs">
-      <DependentUpon>201708100434419_InitialModel.cs</DependentUpon>
+    <Compile Include="Migrations\201708100638232_InitialModel.cs" />
+    <Compile Include="Migrations\201708100638232_InitialModel.Designer.cs">
+      <DependentUpon>201708100638232_InitialModel.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708100448558_SeedMembershipTypes.cs" />
-    <Compile Include="Migrations\201708100448558_SeedMembershipTypes.Designer.cs">
-      <DependentUpon>201708100448558_SeedMembershipTypes.cs</DependentUpon>
+    <Compile Include="Migrations\201708100641430_SeedMembershipTypes.cs" />
+    <Compile Include="Migrations\201708100641430_SeedMembershipTypes.Designer.cs">
+      <DependentUpon>201708100641430_SeedMembershipTypes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201708100452347_SeedGenreTypes.cs" />
-    <Compile Include="Migrations\201708100452347_SeedGenreTypes.Designer.cs">
-      <DependentUpon>201708100452347_SeedGenreTypes.cs</DependentUpon>
+    <Compile Include="Migrations\201708100642573_SeedGenreTypes.cs" />
+    <Compile Include="Migrations\201708100642573_SeedGenreTypes.Designer.cs">
+      <DependentUpon>201708100642573_SeedGenreTypes.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -268,14 +268,14 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201708100434419_InitialModel.resx">
-      <DependentUpon>201708100434419_InitialModel.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708100638232_InitialModel.resx">
+      <DependentUpon>201708100638232_InitialModel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708100448558_SeedMembershipTypes.resx">
-      <DependentUpon>201708100448558_SeedMembershipTypes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708100641430_SeedMembershipTypes.resx">
+      <DependentUpon>201708100641430_SeedMembershipTypes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201708100452347_SeedGenreTypes.resx">
-      <DependentUpon>201708100452347_SeedGenreTypes.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201708100642573_SeedGenreTypes.resx">
+      <DependentUpon>201708100642573_SeedGenreTypes.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
