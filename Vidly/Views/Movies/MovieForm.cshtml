@@ -4,7 +4,11 @@
     ViewBag.Title = "Movie Form";
 }
 
-<h2>New Movie</h2>
+@if (Model.Movie != null) {
+    <h2>Edit Movie</h2>
+} else {
+    <h2>New Movie</h2>
+}
 
 @using (Html.BeginForm("Save", "Movies")) {
     <div class="form-group">
