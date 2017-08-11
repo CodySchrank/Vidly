@@ -42,11 +42,11 @@ namespace Vidly.Migrations
                         ReleaseDate = c.DateTime(nullable: false),
                         CreatedAt = c.DateTime(nullable: false),
                         Stock = c.Int(nullable: false),
-                        Genre_Id = c.Byte(nullable: false),
+                        GenreId = c.Byte(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
-                .ForeignKey("dbo.Genres", t => t.Genre_Id, cascadeDelete: true)
-                .Index(t => t.Genre_Id);
+                .ForeignKey("dbo.Genres", t => t.GenreId, cascadeDelete: true)
+                .Index(t => t.GenreId);
             
             CreateTable(
                 "dbo.Genres",

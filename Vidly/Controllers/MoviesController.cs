@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Web.Mvc;
 using Vidly.Models;
 using Vidly.ViewModels;
@@ -45,6 +46,27 @@ namespace Vidly.Controllers
             };
 
             return View(viewModel);
+        }
+
+        public ActionResult Save(Movie movie)
+        {
+            movie.CreatedAt = DateTime.Now;            
+            _context.Movies.Add(movie);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index", "Movies");
+        }
+
+        public ActionResult New()
+        {
+            var genres = _context.Genres.ToList();
+
+            var movieFormViewModel = new MovieFormViewModel()
+            {
+                Genres = genres
+            };
+
+            return View("MovieForm", movieFormViewModel);
         }
     }
 }
